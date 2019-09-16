@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="localRedis">
+      <UniqueIdentifier>{68890eba-c980-42e9-aaf1-114115406ee4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="malloc">
+      <UniqueIdentifier>{8e25bc6e-efbb-49c3-b1c5-f1f0cc63ca75}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mallocPool.cpp">
+      <Filter>malloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mallocManager.cpp">
+      <Filter>malloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\localRedis.cpp">
+      <Filter>localRedis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\base.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\valueType.cpp">
+      <Filter>localRedis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dataNode.cpp">
+      <Filter>localRedis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dataBase.cpp">
+      <Filter>localRedis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\skipList.cpp">
+      <Filter>localRedis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\zSet.cpp">
+      <Filter>localRedis</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\base.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mallocPool.h">
+      <Filter>malloc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mallocManager.h">
+      <Filter>malloc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\localRedis.h">
+      <Filter>localRedis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Define.h">
+      <Filter>localRedis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\valueType.h">
+      <Filter>localRedis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dataNode.h">
+      <Filter>localRedis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dataBase.h">
+      <Filter>localRedis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\skipList.h">
+      <Filter>localRedis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\zSet.h">
+      <Filter>localRedis</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
