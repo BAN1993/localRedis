@@ -3,7 +3,9 @@
 #include "base.h"
 #include "mallocPool.h"
 
-//#define _TEST_MEM_ // 检测哪里申请的内存没有释放,可以由makefile定义
+// 检测哪里申请的内存没有释放,可以由makefile定义
+// 未做优化,严重影响性能,谨慎开启
+//#define _TEST_MEM_
 
 #if defined _TEST_MEM_
 	#define __new(size) mallocManager::getInstance().malloc(size, __FILE__, __LINE__)
@@ -61,6 +63,7 @@ public:
 	char* malloc(unsigned int size, const char* filename, unsigned int line);
 	char* malloc(unsigned int size);
 	bool free(char* ptr);
+	bool avail(char* ptr); // 判断内存是否有效(必须是我申请的内存)
 
 private:
 	unsigned int fixSize(unsigned int fsize);		// 调整内存大小为整数

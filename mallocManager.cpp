@@ -110,6 +110,18 @@ bool mallocManager::free(char* ptr)
 	return false;
 }
 
+bool mallocManager::avail(char* ptr)
+{
+	if(!ptr)
+		return false;
+	unsigned long p = (unsigned long)ptr;
+	if(_small_ptr_list.find(p)!=_small_ptr_list.end())
+		return true;
+	if(_big_ptr_list.find(p)!=_big_ptr_list.end())
+		return true;
+	return false;
+}
+
 unsigned int mallocManager::fixSize(unsigned int fsize)
 {
 	unsigned int fact_size = fsize;
